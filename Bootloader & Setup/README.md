@@ -1,4 +1,4 @@
-# WS v2 MCU Bootloader and Initial Setup
+# Bootloader and Initial Setup
 
 ## Necessary Tools
 
