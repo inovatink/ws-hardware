@@ -10,9 +10,16 @@
 
 2. Install latest Arduino IDE 
 3. Install latest SAMD board package (Boards Manager)
-4. In AppData\Local\Arduino15\packages\arduino\hardware\samd\1.6.15 or similar folder in boards.txt file under the section named # Arduino/Genuino Zero (Native USB Port) 
-	insert 	arduino_zero_native.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
-	instead of arduino_zero_native.build.extra_flags= -D__SAMD21G18A__ {build.usb_flags}
+4. In AppData\Local\Arduino15\packages\arduino\hardware\samd\1.6.15 or similar folder in boards.txt file under the section named # Arduino/Genuino Zero (Native USB Port) insert; 	
+```cpp 
+arduino_zero_native.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
+```
+instead of
+
+```cpp
+	 of arduino_zero_native.build.extra_flags= -D__SAMD21G18A__ {build.usb_flags}
+```
+
 5. In variant.cpp from \packages\arduino\hardware\samd\1.6.15\variants\arduino_zero change pin description in PinDescription g_APinDescription
 
 - Comment out:
