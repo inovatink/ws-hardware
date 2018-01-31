@@ -47,7 +47,7 @@ void SERCOM2_Handler(){
 extern Uart Serial2;    // Serial2 definition
 ```
 
-- Add serial2 pin definition below
+- Also add serial2 pin definition as shown below
 
 ```cpp	
 #define PIN_SERIAL2_RX       (3ul)                 // Pin description number for PIO_SERCOM on D3
