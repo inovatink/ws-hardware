@@ -6,8 +6,13 @@
 
 ## Procedure
 
-1. Flash Board with bootloader circuitplay_m0_samd21g18_sam_ba.bin from https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/circuitplay (also found here)
+Below procedure explains how to program the bootloader into the wearable sensor board and how to change variant.cpp, variant.h and boards.txt files in order to have wearable sensor working with Arduino enviroment.
 
+> If you already have board with Arduino bootloader you can skip step 1.
+
+> This repo  includes the changed boards.txt, variant.cpp and varian.h files. This files were changed for Arduino version 1.8.5 (Windows) and Arduino SAMD Boards package version 1.6.17. If you have different version of Arduino and SAMD board package it is recommended that you go through procedure given below. Otherwise just download these files and replace the original ones in the corresponding folders and you will be all set.
+
+1. Flash Board with bootloader circuitplay_m0_samd21g18_sam_ba.bin from https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/circuitplay (also found in this repo)
 2. Install latest Arduino IDE 
 3. Install latest SAMD board package (Boards Manager)
 4. In AppData\Local\Arduino15\packages\arduino\hardware\samd\1.6.xx folder in boards.txt file under the section named # Arduino/Genuino Zero (Native USB Port) insert -DCRYSTALLESS flag in; 	
