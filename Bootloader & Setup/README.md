@@ -42,7 +42,7 @@ void SERCOM2_Handler(){
 	}
 ```
 
-6. In variant.h under the same folder add following code at the end before #endif
+6. In variant.h under the same folder add following code in the SERCOM DEFINITION
 ```cpp
 extern Uart Serial2;    // Serial2 definition
 ```
