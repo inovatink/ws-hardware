@@ -8,8 +8,8 @@
 
 1. Flash Board with bootloader circuitplay_m0_samd21g18_sam_ba.bin from https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/circuitplay (also found here)
 
-2. Install latest Arduino IDE
-3. Install latest SAMD board package
+2. Install latest Arduino IDE 
+3. Install latest SAMD board package (Boards Manager)
 4. In AppData\Local\Arduino15\packages\arduino\hardware\samd\1.6.15 or similar folder in boards.txt file under the section named # Arduino/Genuino Zero (Native USB Port) 
 	insert 	arduino_zero_native.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
 	instead of arduino_zero_native.build.extra_flags= -D__SAMD21G18A__ {build.usb_flags}
