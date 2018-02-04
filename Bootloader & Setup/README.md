@@ -25,7 +25,7 @@ This operation shoud result in line like shown below;
 arduino_zero_native.build.extra_flags= -DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
 ```
 
-5. In variant.cpp from \packages\arduino\hardware\samd\1.6.15\variants\arduino_zero change pin description in PinDescription g_APinDescription
+5. In variant.cpp from \packages\arduino\hardware\samd\1.6.xx\variants\arduino_zero change pin description in PinDescription g_APinDescription
 
 - Comment out:
 ```cpp
